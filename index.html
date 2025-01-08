@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kal's Website</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Trebutchet MS', sans-serif;
+            background: linear-gradient(to right, #2d8432, #338135); /* Green gradient background */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            color: #fff;
+            padding: 1rem 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-transform: lowercase;
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        nav {
+    position: relative;
+    z-index: 10;
+}
+
+
+        nav a {
+            color: #fff;
+            font-size: 1.3rem;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            text-transform: lowercase;
+        }
+
+        nav a:hover {
+            color: #c8e6c9;
+            transition: color 0.3s ease;
+        }
+
+        /* Section styling */
+        section {
+            background-color: #ffffff;
+            color: #333;
+            padding: 2rem;
+            max-width: 300px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            text-align: middle;
+        }
+
+        h2 {
+            color: #388e3c;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 1.6rem;
+        }
+
+        /* Image styling */
+        .photo {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            gap: 1rem;
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 2px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #26812a;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .photo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .photo img {
+                width: 80%;
+                margin-bottom: 1rem;
+            }
+        }
+    /* Image styling */
+    .image-container {
+            margin: 1em 0;
+            display: inline-block;
+            padding: 10px;
+            background-color: #fff;
+            border: 5px solid #4caf50;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 1px;
+        }
+
+        /* Name with flair styling */
+        .name-flair {
+            margin-top: 30px;
+            font-size: 2em;
+            font-weight: bold;
+            color: #4caf50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .name-flair::before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #66bb6a, #4caf50, #66bb6a);
+        }
+
+        .name-flair:hover {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        }
+
+    </style>
+</head>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Greetings! Welcome to Kal's Website</h1>
+    </header>
+
+    <nav>
+        <a href="../index/index.html">Home</a>
+        <a href="../about me/about_me.html">About Me</a>
+        <a href="../education/education.html">Education</a>
+        <a href="../family/family.html">Family</a>
+        <a href="../favorite band/favorite_band.html">Favorite Band</a>
+        <a href="../favorite movie/favorite_movie.html">Favorite Movie</a>
+        <a href="../friends/friends.html">Friends</a>
+        <a href="../gallery/gallery.html">Gallery</a>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to the homepage! Here you will find details about the website of Haikal.</p>
+    <!-- Image Section -->
+    <div class="image-container">
+        <img src="palinghensem.jpg.jpg" alt="Kal's Image">
+    </div>
+
+</section>
+
+<!-- Name with Flair Section -->
+<div class="name-flair">
+    Haikal!
+</div>
+ <!-- Audio Section -->
+ <div class="audio-container">
+    <audio controls>
+        <source src="hobbits.mp3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Example</title>
+    </head>
+    <body>
+        <button id="myButton">Click Me!</button>
+        <script>
+            document.getElementById("myButton").addEventListener("click", function () {
+                alert("Welcome to my Website!");
+            });
+        </script>
+    </body>
+    </html>
+        <footer>
+        <p>© 2025 Kal Homepage. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
